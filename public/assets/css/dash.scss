@@ -1,0 +1,75 @@
+
+$box-shadow-sm: 0 1rem 3rem rgba($black, .175);
+.patient-registration {
+	display: none;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 300;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(168, 168, 168, 0.5);
+
+	.modal {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		width: 80vw;
+		height: auto;
+		background-color: #fff;
+		transform: translate(-50%, -40%);
+		border-radius: 1rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		.modal__header {
+			padding: 1.3rem 2rem;
+			display: flex;
+			width: 100%;
+			justify-content: flex-end;
+			gap: 35%;
+			align-items: center;
+
+			.modal__header__heading {
+				font-size: 1.75rem;
+				font-weight: 600;
+			}
+
+			.modal-closebtn {
+				cursor: pointer;
+			}
+		}
+    }}
+    .patient-registration.active {
+        display: block;
+        visibility: visible;
+    }
+    .modal__container {
+		padding: 3rem;
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba($color: #696969, $alpha: 0.2);
+        background-color: #f5f5f5;
+    }
+	.img-logo img{
+		border-radius:  50%;
+		height: 3.5rem;
+		width: 3.5rem;
+	}
+	.cards{
+		display: block;
+		flex-direction: row;
+	}
+	.card{
+		box-shadow: $box-shadow-sm;
+	}
+	html{
+		overflow-y:scroll ;
+	}
+	html::-webkit-scrollbar{
+		display: none;
+	}
